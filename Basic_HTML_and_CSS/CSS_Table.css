@@ -1,0 +1,11 @@
+table {
+	border: 1px solid silver;
+}	
+tr, td:hover {
+	background-color: Teal;
+	color:LavenderBlush;
+}
+tr, th {
+	background-color: LavenderBlush;
+	color: Teal;
+}
