@@ -34,47 +34,108 @@
 		<!--End About-->
 		
 		<!--Gallery-->
-		<section>
+		<div class="row">
 			<div id="Gallery">
 				<h1>Gallery</h1>
-				<div>
-				
+			</div>
 				<!--Container1-->
-					<div>
-						<div>
-							<img src="C:\Users\steph\Desktop\HTML-and-CSS-Projects\One-Page_Website\Contortion_1.jpg" alt="Contortionists" width= "500px" height="450px">
+						<div class="column">
+							<img src="Contortion_1.jpg" alt="Contortionists" width= "350px" height="225px" 
+							onclick="openModal();currentSlide(1)" class="hover-shadow">
 							<div>
 								<h2>2017 Photoshoot</h2>
 							</div>
 						</div>
-					</div>
 				<!--End Container1-->
 				
 				<!--Container2-->
-					<div>
-						<div>
-							<img src="C:\Users\steph\Desktop\HTML-and-CSS-Projects\One-Page_Website\Contortion_2.jpg" alt="Contortionists" width= "500px" height="350px">
+						<div class="column">
+							<img src="Contortion_2.jpg" alt="Contortionists" width= "350px" height="225px"
+							onclick="openModal();currentSlide(1)" class="hover-shadow">
 							<div>
 								<h2>2017 Photoshoot</h2>
 							</div>
 						</div>
-					</div>
 				<!--End Container2-->
 				
 				<!--Container3-->
-					<div>
-						<div>
-							<img src="C:\Users\steph\Desktop\HTML-and-CSS-Projects\One-Page_Website\Dancer_1.jpg" alt="Dancer" width= "500px" height="450px">
+						<div class="column">
+							<img src="Contortion_3.jpg" alt="Contortionists" width= "350px" height="225px"
+							onclick="openModal();currentSlide(1)" class="hover-shadow">
 							<div>
-								<h2>Misc. Photoshoot</h2>
+								<h2>Circus Star Photoshoot</h2>
 							</div>
 						</div>
-					</div>
 				<!--End Container3-->
-			
+
+				<!--Container4-->
+				<div class="column">
+					<img src="Contortion_4.jpg" alt="Contortionists" width= "350px" height="225px"
+					onclick="openModal();currentSlide(1)" class="hover-shadow">
+					<div>
+						<h2>Circus Star Photoshoot</h2>
+					</div>
+				</div>
+				<!--End Container4-->
+
+		</div>
+
+
+		<!--Modal/Lightbox-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				
+				<div class="mySlides">
+					<div class="numbertext">1/4</div>
+					<img src="Contortion_1.jpg" width= "700px" height="450px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2/4</div>
+					<img src="Contortion_2.jpg" width= "700px" height="450px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3/4</div>
+					<img src="Contortion_3.jpg" width= "700px" height="450px">
+				</div>
+				
+				<div class="mySlides">
+					<div class="numbertext">4/4</div>
+					<img src="Contortion_4.jpg" width= "700px" height="450px">
+				</div>
+
+				<!--Next/previous controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!--Caption text-->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!--Thumbnail-->
+				<div id="centerthumb">
+				<div class="thumbnail">
+					<img class="demo" src="Contortion_1.jpg" onclick="currentSlide(1)" alt="Contortion Shadow">
+				</div>
+
+				<div class="thumbnail">
+					<img class="demo" src="Contortion_2.jpg" onclick="currentSlide(2)" alt="Contortion Shadow">
+				</div>
+
+				<div class="thumbnail">
+					<img class="demo" src="Contortion_3.jpg" onclick="currentSlide(3)" alt="Circus Star">
+				</div>
+
+				<div class="thumbnail">
+					<img class="demo" src="Contortion_4.jpg" onclick="currentSlide(4)" alt="Circus Star">
+				</div>
 				</div>
 			</div>
-		</section>
+		</div>
+
 		<!--End Gallery-->
 		
 		<!--Performance-->
@@ -110,6 +171,7 @@
 		<footer>
 			<p>&copy TwistedContortion 2020</p>
 		</footer>
-		<!--End Footer-->				
+		<!--End Footer-->	
+		<script src="JS/one_page_website.js"></script>			
 	</body>				
 </html>
