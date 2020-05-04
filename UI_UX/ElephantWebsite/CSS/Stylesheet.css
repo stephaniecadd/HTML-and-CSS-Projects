@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+/*navigation bar*/
+.navbar{
+    background-color: #1c3d509a;
+    width: 100%;
+    height: 8vh;
+    top:0;
+    left: 0;
+    right:0;
+    z-index: 100;
+    position: fixed;
+    overflow: hidden;
+}
+/*Logo*/
+.navbar h1 {
+    float: left;
+    text-align: center;
+    color: #f1e9e8;
+    padding-left: 2vh;
+}
+
+/*put menu links to right*/
+.menu {
+    float: right;
+    padding-right: 2vh;
+    padding-top: 3vh;
+    top: 0;
+    z-index: 101;
+}
+
+/*style menu links*/
+a {
+    color: #f1e9e8;
+    font-size: 2vh;
+    text-decoration: none;
+    margin: 2vh;
+}
+
+/*formatting columns*/
+.headerimage, .headertext, .column1, .column2 {
+    width: 50%;
+    float: left;
+    margin-top:0;
+}
+
+/*text in header*/
+.headertext {
+    padding: 12.5%;
+    color: #f1e9e8;
+    text-align: center;
+    line-height: 4vh;
+
+}
+
+.column1, .column2 {
+    padding: 5%;
+    line-height: 4vh;
+    height: 55vh; 
+}
+
+/*make background blue in first row*/
+.row {
+    background-color: #0f202a;
+    height: 65vh; 
+}
+
+
+footer {
+    background-color: #1c3d50;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+p {
+    font-family: "Lato", sans-serif;
+}
+
+/*link in header*/
+.learnlink {
+    font-family: "Lucida Bright", serif;
+    color: #f1e9e8;
+    font-size: 3vh;
+}
+
+/*link at bottom*/
+.donatelink{
+    font-family: "Lucida Bright", serif;
+    color: black;
+    padding-left: 39%;
+    padding-top: 35%;
+    font-size: 3vh;
+}
+
+img {
+    max-width: 100%;
+}
+input {
+    width: 30vw;
+    border: .1vh solid black;
+    border-radius: .5vw;
+    margin: 1vh;
+    padding: .5vw;
+}
+
+#message {
+    padding-bottom: 2vw;
+}
+
+button {
+    background-color: transparent;
+    border: .1vh solid black;
+    border-radius: .5vw;
+    padding: .5vw;
+    margin: .5vw;
+}
+hr {
+    width: 4vw;
+}
