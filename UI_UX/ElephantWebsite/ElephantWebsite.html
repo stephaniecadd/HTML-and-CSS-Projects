@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./CSS/Stylesheet.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+        <audio id="sound"><source src="onclicksound.wav" type="audio/WAV"></audio>
         <title>Elephant Sanctuary</title>
     </head>
     <body>
@@ -61,7 +62,7 @@
                 <input type="text" placeholder="Email" name="email">
                 <input type="text" placeholder="Message" name="message" id="message">
             </form>
-            <button type="submit">Submit</button>
+            <button onclick="play()" type="submit">Submit</button>
         </div>
         <div class="column2" id="mission">
             <h1>Mission</h1>
@@ -74,9 +75,15 @@
             <hr>
         </div>
         <!--End third row-->
+
         <script>
             gsap.to("h1", {duration: 1, x: 100, ease: "bounce"});
+            function play(){
+            var audio = document.getElementById("sound");
+                audio.play();
+           }
         </script>
+
     </body>
 
     <footer>
