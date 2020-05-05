@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="./CSS/Stylesheet.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
         <audio id="sound"><source src="onclicksound.wav" type="audio/WAV"></audio>
+        <audio id="noise"><source src="elephant9.wav" type="audio/WAV"></audio>
         <title>Elephant Sanctuary</title>
     </head>
     <body>
@@ -23,7 +24,7 @@
         <!--First Row-->
         <div class="row">
         <div class="headerimage">
-            <img src="content/Elephant.jpg">
+            <img onclick="elephant()" src="content/Elephant.jpg">
         </div>
         <div class="headertext">
             <p>
@@ -80,6 +81,10 @@
             gsap.to("h1", {duration: 1, x: 100, ease: "bounce"});
             function play(){
             var audio = document.getElementById("sound");
+                audio.play();
+           }
+           function elephant(){
+            var audio = document.getElementById("noise");
                 audio.play();
            }
         </script>
