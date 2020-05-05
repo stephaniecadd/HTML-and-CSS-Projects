@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./CSS/Stylesheet.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
         <title>Elephant Sanctuary</title>
     </head>
     <body>
@@ -73,7 +74,9 @@
             <hr>
         </div>
         <!--End third row-->
-
+        <script>
+            gsap.to("h1", {duration: 1, x: 100, ease: "bounce"});
+        </script>
     </body>
 
     <footer>
