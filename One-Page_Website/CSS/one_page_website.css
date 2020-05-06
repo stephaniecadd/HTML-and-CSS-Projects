@@ -1,3 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  list-style: none;
+  display: inline-block;
+}
+#link {
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  font-size: 14px;
+  margin: 10px;
+  color: black;
+}
+#link:hover {
+  color: rgb(250, 93, 242);
+}
 p {
     font-family: "Questrial", sans-serif;
     font-size: 14px;
@@ -13,18 +30,20 @@ h2, h3, h4, h5 {
     font-weight: 400;
 }
 input[type="text"] {
-    border: 1px solid#F0DEFF;
+    border: 1px solid rgb(250, 93, 242);
     border-radius: 5px;
     text-align: center;
     margin: 10px 10px;
-    width: 100px;
+    width: 200px;
+    height: 25px;
 }
 input[type="submit"] {
-    border: 1px solid#F0DEFF;
+    border: 1px solid rgb(250, 93, 242);
     border-radius: 5px;
     text-align: center;
     margin: 10px 10px;
     width: 100px;
+    background-color: transparent;
 }
 /*Lightbox*/
 .row > .column {
@@ -38,6 +57,7 @@ input[type="submit"] {
 .column {
     float: left;
     width: 350px;
+    margin: 5px;
 }
 .modal {
     display: none;
