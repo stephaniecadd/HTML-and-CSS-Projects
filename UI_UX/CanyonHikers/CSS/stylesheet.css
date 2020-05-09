@@ -146,6 +146,11 @@ p {
     float: right;
     padding: 1.3vw;
 }
+p>a {
+    color: #2c3554;
+    font-weight: 600;
+    text-decoration: none;
+}
  #npr {
       margin-left: 6vw;
   }
