@@ -99,6 +99,10 @@ p {
 
 .column>img {
     box-shadow: black 2px 2px 5px;
+    transition: transform .2s; 
+}
+.column>img:hover {
+    transform: scale(2);
 }
   
   /* Clear floats after image containers */
@@ -170,3 +174,4 @@ p>a {
       padding-right: 2vw;
       color: #f5edd7;
   }
+
