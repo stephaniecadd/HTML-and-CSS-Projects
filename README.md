@@ -1,2 +1,2 @@
 # HTML-and-CSS-Projects
-HTML and CSS Websites
+Websites created using HTML and CSS. Websites created as projects for The Tech Acadamy UI UX program.
